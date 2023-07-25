@@ -32,3 +32,12 @@ koniec`
 console.log(singleQuoteExample2, slashExample, longTxt, superTxt);
 
 console.log('zamiana na string', String(100), 200..toString(), 200..toString(16), "" + 300);
+
+console.log("----------");
+
+console.log("🙂".length);
+
+const startString = "jakiś string";
+const endsString = "jakiś string";
+
+console.log("String starts and ends: ", startString.startsWith("jak"), endsString.endsWith("abs"));

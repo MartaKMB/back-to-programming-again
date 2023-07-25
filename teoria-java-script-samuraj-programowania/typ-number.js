@@ -22,3 +22,20 @@ console.log("parseInt: ", parseInt('100'), parseInt('100', 10), parseInt('100', 
 console.log("parseInt a parseFloat ", parseInt("2.53"), parseFloat("2.53"));
 
 console.log("Obiekt Math: ", Math.round(decimalExample), Math.floor(decimalExample), Math.random());
+
+console.log("--------");
+
+console.log(0.1 + 0.2 == 0.3, "nie? bo: ", 0.1 + 0.2, (0.1 * 100 + 0.2 * 100) / 100);
+console.log("maksymalna liczba: ", Number.MAX_VALUE, Number.MAX_SAFE_INTEGER, "BigInt?");
+
+const value = "23.2";
+const newValue = Number(value);
+const newValue2 = Number.parseInt(value);
+const newValue3 = +value;
+console.log("zmiana: ", newValue, newValue2, newValue3);
+
+const mathValue = Math.pow(2,64);
+const mathMin = Math.min(2, 5, 67, 89, -2, 0, 34);
+const mathMax = Math.max(2, 5, 67, 89, -2, 0, 34);
+const mathCeil = Math.ceil(2.1);
+console.log("Math: ", mathValue, mathMin, mathMax, mathCeil);
