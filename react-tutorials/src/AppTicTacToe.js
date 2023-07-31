@@ -1,11 +1,16 @@
-import { useState } from "react";
-import "./App.css";
+import { useState } from 'react';
+import './App.css';
 
-function App() {
+function AppTicTacToe() {
   return (
-    <div className="App">
-      <header>Tutorial: Tic Tac Toe</header>
-      <div>Tutorial zrobiony do: Showing the past moves</div>
+    <div className='App'>
+      <header>
+        <strong>Tutorial: Tic Tac Toe</strong>
+      </header>
+      <div style={{ display: 'none' }}>
+        Tutorial zrobiony do: Showing the past moves
+      </div>
+      <div>Źródło: https://react.dev/learn/tutorial-tic-tac-toe</div>
       <Game />
     </div>
   );
@@ -13,7 +18,7 @@ function App() {
 
 function Square({ value, onSquereClick }) {
   return (
-    <button className="square" onClick={onSquereClick}>
+    <button className='square' onClick={onSquereClick}>
       {value}
     </button>
   );
@@ -28,9 +33,9 @@ function Board({ xIsNext, squares, onPlay }) {
     const nextSquares = squares.slice();
 
     if (xIsNext) {
-      nextSquares[i] = "X";
+      nextSquares[i] = 'X';
     } else {
-      nextSquares[i] = "O";
+      nextSquares[i] = 'O';
     }
     onPlay(nextSquares);
   }
@@ -39,25 +44,25 @@ function Board({ xIsNext, squares, onPlay }) {
   let status;
 
   if (winner) {
-    status = "Winner: " + winner;
+    status = 'Winner: ' + winner;
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
 
   return (
     <>
-      <div className="status">{status}</div>
-      <div className="board-row">
+      <div className='status'>{status}</div>
+      <div className='board-row'>
         <Square value={squares[0]} onSquereClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquereClick={() => handleClick(1)} />
         <Square value={squares[2]} onSquereClick={() => handleClick(2)} />
       </div>
-      <div className="board-row">
+      <div className='board-row'>
         <Square value={squares[3]} onSquereClick={() => handleClick(3)} />
         <Square value={squares[4]} onSquereClick={() => handleClick(4)} />
         <Square value={squares[5]} onSquereClick={() => handleClick(5)} />
       </div>
-      <div className="board-row">
+      <div className='board-row'>
         <Square value={squares[6]} onSquereClick={() => handleClick(6)} />
         <Square value={squares[7]} onSquereClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquereClick={() => handleClick(8)} />
@@ -78,11 +83,11 @@ function Game() {
   }
 
   return (
-    <div className="game">
-      <div className="game-board">
+    <div className='game'>
+      <div className='game-board'>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
-      <div className="game-info">
+      <div className='game-info'>
         <ol>{/*TODO*/}</ol>
       </div>
     </div>
@@ -109,4 +114,4 @@ function calculateWinner(squares) {
   return null;
 }
 
-export default App;
+export default AppTicTacToe;
