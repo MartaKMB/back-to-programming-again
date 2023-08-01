@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS średniozaawansowany</title>
+    <style>
+      body {
+        margin: 0 auto;
+        color: white;
+        font-family: sans-serif;
+        min-height: 100vh;
+        max-width: 1200px;
+
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: 100px 50px 1fr 50px;
+        grid-template-areas: 'baner baner' 'menu menu' 'blog column' 'footer footer';
+      }
+
+      header {
+        background-color: pink;
+
+        grid-area: baner;
+      }
+
+      nav {
+        background-color: cadetblue;
+
+        grid-area: menu;
+      }
+
+      main {
+        background-color: azure;
+
+        grid-area: blog;
+      }
+
+      aside {
+        background-color: aquamarine;
+
+        grid-area: column;
+      }
+
+      footer {
+        background-color: burlywood;
+
+        grid-area: footer;
+      }
+
+      @media (max-width: 1024px) {
+        body {
+          grid-template-columns: 1fr;
+          grid-template-rows: 50px 100px 2fr 1fr 50px;
+          grid-template-areas: 'menu' 'baner' 'blog' 'column' 'footer';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>BANER</header>
+    <nav>NAWIGACJA</nav>
+    <main>BLOG</main>
+    <aside>KOLUMNA</aside>
+    <footer>STOPKA</footer>
+  </body>
+</html>
