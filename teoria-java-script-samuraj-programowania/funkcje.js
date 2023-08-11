@@ -121,3 +121,40 @@ showInfoAboutUser();
 showInfoAboutUser(18);
 showInfoAboutUser(18, 'Rozalia');
 showInfoAboutUser(18, 'Rozalia', 'kobieta');
+
+function showAllArguments(...args) {
+  console.log(args);
+  return args;
+}
+
+showAllArguments(1, 2, 'Ala', 'ma kota', false, 3);
+
+function addAllWords(...words) {
+  let txt = '';
+  //   for (let i = 0; i < words.length; i++) {
+  //     txt += `${words[i]} `;
+  //   }
+  words.forEach((word) => (txt += `${word} `));
+  console.log(txt);
+}
+
+addAllWords('Jabłka', 'Gruszki', 'Śliwki', 'Borówki');
+
+function showUsers(owner, ...other) {
+  console.log(
+    `Uzytkwonicy w aplikacji: ${owner} [admin]`,
+    other.length > 0 ? `i ${other}` : ''
+  );
+}
+
+showUsers('Robert', 'Błazej', 'Karolina', 'Agnieszka', 'Adam');
+showUsers('Beata');
+
+const objectExample = {
+  userName: 'Adam',
+  showName() {
+    console.log('Metoda pokazująca imię');
+  },
+};
+
+objectExample.showName();
