@@ -73,4 +73,4 @@ let findShortestPath = (graph, startNode, endNode) => {
 console.log(findShortestPath(graph, 'start', 'finsh'));
 
 // with help from https://levelup.gitconnected.com/finding-the-shortest-path-in-javascript-dijkstras-algorithm-8d16451eea34
-// still problem/challenge with Infinity
+// TODO: still problem/challenge with Infinity
