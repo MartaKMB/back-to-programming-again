@@ -112,6 +112,27 @@
       if (!isCookiesSet('accept-cookies')) {
         showCookies();
       }
+
+      function hideCookies() {
+        document.querySelector('#cookie-notice').classList.add('hide');
+      }
+
+      function setCookie(name, value, expirationDate) {
+        let cookie = `${name}=${value}`;
+        if (expirationDate) {
+          cookie += `; max-age=${expirationDate}`;
+        }
+        document.cookie = cookie;
+      }
+
+      function acceptCookie() {
+        hideCookies();
+        setCookie('accept-cookies', true, 60 * 24 * 365);
+      }
+
+      document
+        .querySelector('#cookie-notice-button')
+        .addEventListener('click', acceptCookie);
     </script>
   </body>
 </html>
