@@ -1,8 +1,8 @@
 # Some programming exercises
 
-In this project direcotry are exercises from my "personal project": `back to programming in 2023`. 😄
+In this project direcotry are exercises from my "personal project": `improving programming skills`. 😄
 
-It's "a little bit of everything repository", where I put my code from learning, to see my own progress and all stuff that I learned. I know that it is chaotic, and has some polish names, but for now it is important repository for me. 😉
+It's "a little bit of everything repository", where I put my code from learning, to see my own progress and stuff that I learned. I know that it is chaotic, and has some polish names, but it is my playground. 😉
 
 You will find here:
 
