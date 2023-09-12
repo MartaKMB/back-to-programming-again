@@ -1,0 +1,25 @@
+$primary-color: bisque;
+
+body {
+  background-color: $primary-color;
+}
+
+header {
+  height: 200px;
+  text-align: center;
+}
+
+main {
+  height: calc(100vh - 300px);
+  width: 600px;
+  margin: 0 auto;
+
+  p {
+    font-size: large;
+  }
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+}

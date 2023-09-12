@@ -1,0 +1,24 @@
+body {
+  background-color: bisque;
+}
+
+header {
+  height: 200px;
+  text-align: center;
+}
+
+main {
+  height: calc(100vh - 300px);
+  width: 600px;
+  margin: 0 auto;
+}
+main p {
+  font-size: large;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
