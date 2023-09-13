@@ -16,4 +16,4 @@ In this project directory is also code from workshops that I took part:
 
 - girlsjs - workshop about cookies
 
-![At grilsjs workshop](./readme-back-to-programming.jpeg)
+![At grilsjs workshop](./readme-image.jpeg)
