@@ -1,0 +1,13 @@
+h2 {
+  margin-top: 50px;
+  border-top: 1px solid black;
+}
+
+#recenzje {
+  border: solid 2px black;
+  padding: 10px;
+}
+
+#recenzje div {
+  display: none;
+}
