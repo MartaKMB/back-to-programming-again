@@ -103,5 +103,3 @@
 //   $('p.dom-p').wrapInner('<span></span>');
 //   $('span').remove();
 // });
-
-// GALERIA Z POPUPEM
