@@ -5,3 +5,13 @@ body {
 .border {
   border: 5px solid white;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lime;
+  width: 100px;
+  height: 100px;
+}

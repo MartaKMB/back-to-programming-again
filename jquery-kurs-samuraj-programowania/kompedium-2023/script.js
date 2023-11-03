@@ -30,7 +30,7 @@ $('p:first').css('color', 'red');
 // $('p:contains("lorem")').css('color', 'red');
 
 $('div.animation').css({
-  position: 'fixed',
+  // position: 'fixed',
   bottom: 0,
   left: 0,
   width: 75,
@@ -117,4 +117,24 @@ $('button#fade-to').click(() => {
 // $('div.animation').prepend('<div style="color: red;">Blablabla</div>');
 $('<p style="color: red;">Buttons:</p>').insertBefore('button:first');
 
-// 1:08:35
+$('div.animation').wrap('<div class="wrapper"></div>');
+// $('button').wrapAll('<div class="wrapper"></div>');
+
+// $('div.animation').remove();
+$('button#fade-to').attr('title', 'button title');
+// $('button#fade-to').removeAttr('title');
+
+const callbackClick = () => console.log('KLIK');
+
+$('div.animation').on('click', callbackClick);
+// $('div.animation').off('click', callbackClick);
+$('div.animation').on('mouseover', (event) =>
+  $(event.target).css('background-color', 'red')
+);
+$('div.animation').on('mouseleave', (event) =>
+  $(event.target).css('background-color', 'yellow')
+);
+
+$('article:first')
+  .children()
+  .each((index, element) => console.log('each: ', index, element));
