@@ -1,0 +1,1 @@
+console.log('plik JS: script.js');
