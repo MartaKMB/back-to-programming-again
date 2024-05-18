@@ -11,6 +11,8 @@ You will find here:
 - testing exercises
 - css exercises
 - react exercises
+- node exercises
+- ts exercises
 
 In this project directory is also code from workshops that I took part:
 
