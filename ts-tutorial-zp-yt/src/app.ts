@@ -1,1 +1,4 @@
-console.log("test 4!");
+let age: number = 29;
+
+let ageAsString: string = "dwadzieścia dziewięć lat";
+ageAsString = `${age} lat`;
