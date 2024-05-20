@@ -8,3 +8,7 @@ addBtn.addEventListener("click", () => {
     const sum = add(Number(input1Element.value), Number(input2Element.value));
     console.log(sum);
 });
+
+let age: number;
+age = 33;
+
