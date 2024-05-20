@@ -12,3 +12,6 @@ addBtn.addEventListener("click", () => {
 let age: number;
 age = 33;
 
+const ageConst = 37;
+ageConst;
+
