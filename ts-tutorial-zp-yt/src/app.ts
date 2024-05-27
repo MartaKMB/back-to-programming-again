@@ -45,10 +45,12 @@ const taskNameInputElement: HTMLInputElement = document.querySelector('#name');
 const addBtnElement: HTMLButtonElement = document.querySelector('#button3');
 const tasksContainerElement: HTMLElement = document.querySelector('.tasks');
 
-const tasks: {
+interface Task {
   name: string;
   done: boolean;
-}[] = [
+};
+
+const tasks: Task[] = [
   {
     name: 'Wyrzucić śmieci',
     done: false,
@@ -87,13 +89,13 @@ const render = () => {
   });
 };
 
-const addTask = (taskName: string) => {
-  tasks.push({name: taskName, done: false});
+const addTask = (task: Task) => {
+  tasks.push(task);
 };
 
 addBtnElement.addEventListener('click', (event: Event) => {
   event.preventDefault();
-  addTask(taskNameInputElement.value);
+  addTask({ name: taskNameInputElement.value, done: false });
   render();
 });
 
