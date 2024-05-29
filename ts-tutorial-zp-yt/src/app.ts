@@ -31,6 +31,8 @@ const addTask = (task: Task) => {
   tasks.push(task);
 };
 
+const updateSelectedCategory = (newCategory: Category) => selectedCategory = newCategory;
+
 addBtnElement.addEventListener('click', (event: Event) => {
   // const selectedRadioElement: HTMLInputElement = document.querySelector("input[type='radio']:checked");
   // const selectedCategory: Category = selectedRadioElement.value as Category;
@@ -44,5 +46,5 @@ addBtnElement.addEventListener('click', (event: Event) => {
   renderTasks(tasks, tasksContainerElement);
 });
 
-renderCategories(categories, categoriesContainerElement, selectedCategory);
+renderCategories(categories, categoriesContainerElement, updateSelectedCategory);
 renderTasks(tasks, tasksContainerElement);
