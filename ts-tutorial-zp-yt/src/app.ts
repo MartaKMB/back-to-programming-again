@@ -46,5 +46,14 @@ addBtnElement.addEventListener('click', (event: Event) => {
   renderTasks(tasks, tasksContainerElement);
 });
 
+type TaskAsTuple = [string, Category, boolean];
+
+const task: TaskAsTuple = ["Nauka TS", Category.WORK, false];
+const taskName = task[0];
+const taskCategory = task[1];
+const taskDoneStatus = task[2];
+
+addTask({ name: taskName, category: taskCategory, done: taskDoneStatus});
+
 renderCategories(categories, categoriesContainerElement, updateSelectedCategory);
 renderTasks(tasks, tasksContainerElement);
