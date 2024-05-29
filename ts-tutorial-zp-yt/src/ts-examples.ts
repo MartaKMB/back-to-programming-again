@@ -51,3 +51,27 @@ logFixed(2.2);
 let value = get(2.3);
 if (typeof value === "number") logFixed(value);
 
+// type a interface
+type TaskType = {
+  name: string;
+  done: boolean;
+  category?: string;
+}
+
+interface TaskInterface {
+  name: string;
+  done: boolean;
+  category?: string;
+}
+
+interface TaskInterface {
+  createdAt: Date;
+}
+
+// let newTask: TaskInterface;
+let newTask: TaskType;
+
+newTask = {
+  name: "nowy task",
+  done: true,
+}
