@@ -1,4 +1,3 @@
-
 // 1. PROJECT EXAMPLE
 const input1Element: HTMLInputElement = document.querySelector('#input1');
 const input2Element: HTMLInputElement = document.querySelector('#input2');
@@ -49,14 +48,14 @@ const logFixed = (v: number) => console.log(v.toFixed());
 logFixed(2.2);
 
 let value = get(2.3);
-if (typeof value === "number") logFixed(value);
+if (typeof value === 'number') logFixed(value);
 
 // type a interface
 type TaskType = {
   name: string;
   done: boolean;
   category?: string;
-}
+};
 
 interface TaskInterface {
   name: string;
@@ -72,6 +71,6 @@ interface TaskInterface {
 let newTask: TaskType;
 
 newTask = {
-  name: "nowy task",
+  name: 'nowy task',
   done: true,
-}
+};

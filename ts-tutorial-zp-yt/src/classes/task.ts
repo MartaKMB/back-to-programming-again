@@ -1,18 +1,10 @@
-// export interface Task {
-//   name: string;
-//   done: boolean;
-//   category?: Category;
-// }
+import { Category } from '../types/types.js';
 
-export enum Category {
-  GENERAL = 'general',
-  WORK = 'work',
-  GYM = 'gym',
-  HOBBY = 'hobby',
-  SOCIAL = 'social',
+interface Logger {
+  logCreationDate: (addition: string) => void;
 }
 
-export class Task {
+export class TaskClass implements Logger {
   name: string = 'Nowe zadanie';
   done: boolean;
   category?: Category;

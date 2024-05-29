@@ -12,7 +12,7 @@ const handleCategoryChange = (category: Category) => {
   } else if (category === Category.SOCIAL) {
     console.log('to jest social');
   } else {
-    const never: never = category
+    const never: never = category;
     console.log(never);
   }
 };
@@ -45,4 +45,3 @@ export const render = (
     categoriesContainerElement.appendChild(categoryElement);
   });
 };
-
