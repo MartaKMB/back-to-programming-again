@@ -1,15 +1,15 @@
-import { Category } from '../types/types';
+import { Category } from '../types/types.js';
 
 const handleCategoryChange = (category: Category) => {
-  if (category === 'general') {
+  if (category === Category.GENERAL) {
     console.log('to general');
-  } else if (category === 'gym') {
+  } else if (category === Category.GYM) {
     console.log('czas na siłkę!');
-  } else if (category === 'hobby') {
+  } else if (category === Category.HOBBY) {
     console.log('to hobby');
-  } else if (category === 'work') {
+  } else if (category === Category.WORK) {
     console.log('to work');
-  } else if (category === 'social') {
+  } else if (category === Category.SOCIAL) {
     console.log('to jest social');
   } else {
     const never: never = category
@@ -45,3 +45,4 @@ export const render = (
     categoriesContainerElement.appendChild(categoryElement);
   });
 };
+
