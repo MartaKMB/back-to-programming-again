@@ -9,7 +9,7 @@ const categoriesContainerElement: HTMLElement = document.querySelector('.categor
 
 let selectedCategory: Category;
 
-const categories: Category[] = ['general', 'work', 'gym', 'hobby'];
+const categories: Category[] = ['general', 'work', 'gym', 'hobby', "social"];
 
 const tasks: Task[] = [
   {
