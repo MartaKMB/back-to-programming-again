@@ -40,3 +40,14 @@ buyBtn.addEventListener('click', () => {
     new URLSearchParams(window.location.search).get('discount') === 'true';
   console.log(calculatePrice(originalPrice, hasDiscount));
 });
+
+// unknown type
+let get = (res: unknown) => res;
+
+const logFixed = (v: number) => console.log(v.toFixed());
+
+logFixed(2.2);
+
+let value = get(2.3);
+if (typeof value === "number") logFixed(value);
+
