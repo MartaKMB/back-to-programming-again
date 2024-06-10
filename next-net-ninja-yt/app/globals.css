@@ -126,7 +126,8 @@ form button {
 .pill.high {
   @apply bg-red-300 text-red-600;
 }
-.pill.medium {
+.pill.medium,
+.pill.year {
   @apply bg-blue-300 text-blue-600;
 }
 .pill.low {
