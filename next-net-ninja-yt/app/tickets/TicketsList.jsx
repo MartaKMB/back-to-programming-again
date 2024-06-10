@@ -3,7 +3,7 @@ import Link from 'next/link';
 async function getTickets() {
   const res = await fetch('http://numbersapi.com/random/year?json', {
     next: {
-      revalidate: 0,
+      revalidate: 0, // use 0 to opt out of using cache
     },
   });
   return res.json();
