@@ -13,6 +13,7 @@ You will find here:
 - react exercises
 - node exercises
 - ts exercises
+- Next.js exercises
 
 In this project directory is also code from workshops that I took part:
 
